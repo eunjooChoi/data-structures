@@ -41,6 +41,46 @@ struct LinkedList<T> {
         node.next = Node(value: value, next: node.next)
     }
     
+    mutating func pop() -> T? {
+        defer {
+            self.head = head?.next
+            if self.isEmpty { self.tail = nil }
+        }
+        
+        return self.head?.value
+    }
+    
+    mutating func removeLast() -> T? {
+        guard let head = self.head else { return nil }
+        
+        guard head.next != nil else { return self.pop() }
+        
+        var prev = self.head
+        var current = self.head
+        
+        while let next = current?.next {
+            prev = current
+            current = next
+        }
+        
+        prev?.next = nil
+        self.tail = prev
+        
+        return current?.value
+    }
+    
+    mutating func remove(after node: Node<T>?) -> T? {
+        defer {
+            if node?.next === tail {
+                tail = node
+            }
+            
+            node?.next = node?.next?.next
+        }
+        
+        return node?.next?.value
+    }
+    
     func node(at index: Int) -> Node<T>? {
         var currentNode = self.head
         var currentIndex = 0

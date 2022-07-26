@@ -21,9 +21,27 @@ list.append(value: 1)
 list.append(value: 2)
 list.append(value: 3)
 
-print(list)
+//print(list)
 
 let middleNode = list.node(at: 1)
 list.insert(value: 10000, after: middleNode)
 
+//print(list)
+
+let poppedValue = list.pop()
+//print("popped value: \(poppedValue)")
+//print(list)
+
+let removedValue = list.removeLast()
+//print("remove Value: \(removedValue)")
+//print(list)
+
+list.push(value: 1)
+list.push(value: 2)
+print(list)
+
+let secondNode = list.node(at: 1)
+let removedValue2 = list.remove(after: secondNode)
+
+print("removed Value 2: \(removedValue2)")
 print(list)
