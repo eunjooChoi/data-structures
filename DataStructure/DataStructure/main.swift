@@ -64,5 +64,17 @@ import Foundation
 //print(stack)
 //print(stack.pop())
 
-let stack: Stack = [1, 2, 3, 4]
-print(stack)
+//let stack: Stack = [1, 2, 3, 4]
+//print(stack)
+
+var queue = QueueArray<String>()
+queue.enqueue("홍길동")
+queue.enqueue("이순신")
+queue.enqueue("세종대왕")
+
+print(queue)
+
+print(queue.dequeue())
+print(queue)
+
+print(queue.peek)
