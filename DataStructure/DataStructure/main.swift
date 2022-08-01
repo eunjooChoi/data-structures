@@ -79,7 +79,7 @@ import Foundation
 //
 //print(queue.peek)
 
-var queue = QueueLinkedList<String>()
+var queue = QueueStack<String>()
 queue.enqueue("홍길동")
 queue.enqueue("이순신")
 queue.enqueue("세종대왕")
