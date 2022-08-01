@@ -79,14 +79,70 @@ import Foundation
 //
 //print(queue.peek)
 
-var queue = QueueStack<String>()
-queue.enqueue("홍길동")
-queue.enqueue("이순신")
-queue.enqueue("세종대왕")
+//var queue = QueueStack<String>()
+//queue.enqueue("홍길동")
+//queue.enqueue("이순신")
+//queue.enqueue("세종대왕")
+//
+//print(queue)
+//
+//print(queue.dequeue())
+//print(queue)
+//
+//print(queue.peek)
 
-print(queue)
+//let beverages = TreeNode(value: "Beverages")
+//let hot = TreeNode(value: "hot")
+//let cold = TreeNode(value: "cold")
+//
+//beverages.add(child: hot)
+//beverages.add(child: cold)
 
-print(queue.dequeue())
-print(queue)
+func makeBeverageTree() -> TreeNode<String> {
+  let tree = TreeNode("Beverages")
 
-print(queue.peek)
+  let hot = TreeNode("hot")
+  let cold = TreeNode("cold")
+
+  let tea = TreeNode("tea")
+  let coffee = TreeNode("coffee")
+  let chocolate = TreeNode("cocoa")
+
+  let blackTea = TreeNode("black")
+  let greenTea = TreeNode("green")
+  let chaiTea = TreeNode("chai")
+
+  let soda = TreeNode("soda")
+  let milk = TreeNode("milk")
+
+  let gingerAle = TreeNode("ginger ale")
+  let bitterLemon = TreeNode("bitter lemon")
+
+  tree.add(hot)
+  tree.add(cold)
+
+  hot.add(tea)
+  hot.add(coffee)
+  hot.add(chocolate)
+
+  cold.add(soda)
+  cold.add(milk)
+
+  tea.add(blackTea)
+  tea.add(greenTea)
+  tea.add(chaiTea)
+
+  soda.add(gingerAle)
+  soda.add(bitterLemon)
+
+  return tree
+}
+
+let tree = makeBeverageTree()
+//tree.forEachDepthFirst { treeNode in
+//    print(treeNode.value)
+//}
+
+tree.forEachLevelOrder { treeNode in
+    print(treeNode.value)
+}

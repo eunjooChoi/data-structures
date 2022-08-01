@@ -16,6 +16,7 @@
 		7B84340A288D2C8E006E775B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B843409288D2C8E006E775B /* main.swift */; };
 		7B843411288D2D77006E775B /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B843410288D2D77006E775B /* Node.swift */; };
 		7B843413288D30EC006E775B /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B843412288D30EC006E775B /* LinkedList.swift */; };
+		7B9DBFAF28979DBA00B945B5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DBFAE28979DBA00B945B5 /* TreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		7B843409288D2C8E006E775B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7B843410288D2D77006E775B /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		7B843412288D30EC006E775B /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		7B9DBFAE28979DBA00B945B5 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				7B1E3E62289666170078E62C /* DoublyLinkedList.swift */,
 				7B00C89828911C870028FA93 /* Stack.swift */,
 				7B3959D92894F615006AF575 /* Queue */,
+				7B9DBFAE28979DBA00B945B5 /* TreeNode.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				7B1E3E652896683E0078E62C /* QueueLinkedList.swift in Sources */,
 				7B3959D82894F3A9006AF575 /* Queue.swift in Sources */,
 				7B346020289791BA0027D976 /* QueueStack.swift in Sources */,
+				7B9DBFAF28979DBA00B945B5 /* TreeNode.swift in Sources */,
 				7B00C89928911C870028FA93 /* Stack.swift in Sources */,
 				7B1E3E63289666170078E62C /* DoublyLinkedList.swift in Sources */,
 				7B843413288D30EC006E775B /* LinkedList.swift in Sources */,
