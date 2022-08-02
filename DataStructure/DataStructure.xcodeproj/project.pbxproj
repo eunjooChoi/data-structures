@@ -17,6 +17,7 @@
 		7B843411288D2D77006E775B /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B843410288D2D77006E775B /* Node.swift */; };
 		7B843413288D30EC006E775B /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B843412288D30EC006E775B /* LinkedList.swift */; };
 		7B9DBFAF28979DBA00B945B5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DBFAE28979DBA00B945B5 /* TreeNode.swift */; };
+		7BCC63FD2898EC6B00CEB7BD /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC63FC2898EC6B00CEB7BD /* BinaryNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		7B843410288D2D77006E775B /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		7B843412288D30EC006E775B /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		7B9DBFAE28979DBA00B945B5 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		7BCC63FC2898EC6B00CEB7BD /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				7B00C89828911C870028FA93 /* Stack.swift */,
 				7B3959D92894F615006AF575 /* Queue */,
 				7B9DBFAE28979DBA00B945B5 /* TreeNode.swift */,
+				7BCC63FC2898EC6B00CEB7BD /* BinaryNode.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				7B00C89928911C870028FA93 /* Stack.swift in Sources */,
 				7B1E3E63289666170078E62C /* DoublyLinkedList.swift in Sources */,
 				7B843413288D30EC006E775B /* LinkedList.swift in Sources */,
+				7BCC63FD2898EC6B00CEB7BD /* BinaryNode.swift in Sources */,
 				7B3959DB2894F626006AF575 /* QueueArray.swift in Sources */,
 				7B84340A288D2C8E006E775B /* main.swift in Sources */,
 				7B843411288D2D77006E775B /* Node.swift in Sources */,

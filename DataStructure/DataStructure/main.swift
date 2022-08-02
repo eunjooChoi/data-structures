@@ -98,51 +98,70 @@ import Foundation
 //beverages.add(child: hot)
 //beverages.add(child: cold)
 
-func makeBeverageTree() -> TreeNode<String> {
-  let tree = TreeNode("Beverages")
-
-  let hot = TreeNode("hot")
-  let cold = TreeNode("cold")
-
-  let tea = TreeNode("tea")
-  let coffee = TreeNode("coffee")
-  let chocolate = TreeNode("cocoa")
-
-  let blackTea = TreeNode("black")
-  let greenTea = TreeNode("green")
-  let chaiTea = TreeNode("chai")
-
-  let soda = TreeNode("soda")
-  let milk = TreeNode("milk")
-
-  let gingerAle = TreeNode("ginger ale")
-  let bitterLemon = TreeNode("bitter lemon")
-
-  tree.add(hot)
-  tree.add(cold)
-
-  hot.add(tea)
-  hot.add(coffee)
-  hot.add(chocolate)
-
-  cold.add(soda)
-  cold.add(milk)
-
-  tea.add(blackTea)
-  tea.add(greenTea)
-  tea.add(chaiTea)
-
-  soda.add(gingerAle)
-  soda.add(bitterLemon)
-
-  return tree
-}
-
-let tree = makeBeverageTree()
-//tree.forEachDepthFirst { treeNode in
+//func makeBeverageTree() -> TreeNode<String> {
+//  let tree = TreeNode("Beverages")
+//
+//  let hot = TreeNode("hot")
+//  let cold = TreeNode("cold")
+//
+//  let tea = TreeNode("tea")
+//  let coffee = TreeNode("coffee")
+//  let chocolate = TreeNode("cocoa")
+//
+//  let blackTea = TreeNode("black")
+//  let greenTea = TreeNode("green")
+//  let chaiTea = TreeNode("chai")
+//
+//  let soda = TreeNode("soda")
+//  let milk = TreeNode("milk")
+//
+//  let gingerAle = TreeNode("ginger ale")
+//  let bitterLemon = TreeNode("bitter lemon")
+//
+//  tree.add(hot)
+//  tree.add(cold)
+//
+//  hot.add(tea)
+//  hot.add(coffee)
+//  hot.add(chocolate)
+//
+//  cold.add(soda)
+//  cold.add(milk)
+//
+//  tea.add(blackTea)
+//  tea.add(greenTea)
+//  tea.add(chaiTea)
+//
+//  soda.add(gingerAle)
+//  soda.add(bitterLemon)
+//
+//  return tree
+//}
+//
+//let tree = makeBeverageTree()
+////tree.forEachDepthFirst { treeNode in
+////    print(treeNode.value)
+////}
+//
+//tree.forEachLevelOrder { treeNode in
 //    print(treeNode.value)
 //}
 
-tree.forEachLevelOrder { treeNode in
-    print(treeNode.value)
-}
+var tree: BinaryNode<Int> = {
+    let zero = BinaryNode(value: 0)
+    let one = BinaryNode(value: 1)
+    let five = BinaryNode(value: 5)
+    let seven = BinaryNode(value: 7)
+    let eight = BinaryNode(value: 8)
+    let nine = BinaryNode(value: 9)
+    
+    seven.leftChild = one
+    one.leftChild = zero
+    one.rightChild = five
+    seven.rightChild = nine
+    nine.leftChild = eight
+    
+    return seven
+}()
+
+tree.traversePostOrder { print($0) }
